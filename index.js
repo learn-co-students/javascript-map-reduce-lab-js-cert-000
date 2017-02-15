@@ -9009,7 +9009,7 @@ var commentCountAcrossIssues = issues.map(e => e["comments_count"]).reduce(((cou
 
 
 var openIssues = issues.reduce (function(newIssuesArray,issue) {
-if issue.state==="open"{
+if (issue.state==="open"){
 newIssuesArray.push(issue)
 }
 return newIssuesArray
